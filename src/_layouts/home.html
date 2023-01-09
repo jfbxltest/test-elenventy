@@ -1,0 +1,7 @@
+{% extends "./base.html" %} 
+{% block content %}
+  <article>
+    <h1 class="text-green-500 pl-8 dark:bg-gray-800 dark:text-white">{{ title }}</h1>
+    {{ content | safe }}
+  </article>
+{% endblock %}

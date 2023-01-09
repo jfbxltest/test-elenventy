@@ -1,0 +1,12 @@
+<nav>
+  <div class="flex px-8 py-4 shadow-md">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <button class="dark-mode-btn bg-slate-500 text-gray-100 p-2 ml-auto rounded-md">Toggle Dark mode</button>
+  </div>
+  <script>
+    document.querySelector('.dark-mode-btn').addEventListener("click", () => { 
+      document.querySelector("html").classList.toggle("dark");
+    })
+  </script>
+</nav>
