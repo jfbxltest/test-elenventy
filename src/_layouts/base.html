@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
+    
+    <meta property="og:url"           content="http://www.j-team.net/index.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{ title }}" />
+    <meta property="og:description"   content="Ma merveilleuse description: Ars Gratia Artis" />
+    <meta property="og:image"         content="http://www.j-team.net/assets/images/MGM.jpg" />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v15.0" nonce="eBHA0uw2"></script>
     {% include "partials/navigation.html" %}
     {% block content %}
     <p>
